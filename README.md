@@ -37,9 +37,9 @@ Sample data covers March 13–18, 2013, with 498 orders, 469 customers, and 295 
     GROUP BY MONTH(order_date)
     ORDER BY total_sales DESC;``` </pre>
 
-*Result:* March: $372,318 sales, 469 customers, 498 units.
+    *Result:* March: $372,318 sales, 469 customers, 498 units.
 
-*Insight:* March is active; broader data could confirm seasonality.
+    *Insight:* March is active; broader data could confirm seasonality.
 
 2. Cumulative Analysis
 - Running Total by Year query:
@@ -97,14 +97,13 @@ Sample data covers March 13–18, 2013, with 498 orders, 469 customers, and 295 
 4. Proportional Analysis
 - Category Contribution query:
     <pre> ```WITH category_sales AS (
-        SELECT
-            p.category,
-            SUM(f.sales_amount) AS total_sales
-        FROM fact_sales AS f
-        LEFT JOIN dim_products AS p ON p.product_key = f.product_key
-        GROUP BY p.category
-    )
     SELECT
+        p.category,
+        SUM(f.sales_amount) AS total_sales
+    FROM fact_sales AS f
+    LEFT JOIN dim_products AS p ON p.product_key = f.product_key
+    GROUP BY p.category)``` </pre>
+    <pre> ```SELECT
         category,
         total_sales,
         SUM(total_sales) OVER () AS overall_sales,
@@ -112,3 +111,6 @@ Sample data covers March 13–18, 2013, with 498 orders, 469 customers, and 295 
     FROM category_sales
     ORDER BY total_sales DESC;``` </pre>
 
+    *Result:* Bikes ~92.7% ($345,000), Accessories ~7.3% ($27,000).
+
+    *Insight:* Bikes dominate revenue, suggesting a focus on high-value products.
