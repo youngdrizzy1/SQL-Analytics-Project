@@ -89,3 +89,7 @@ FROM (
     END AS py_change
 FROM yearly_product_sales
 ORDER BY product_name, order_year;``` </pre>
+
+*Result:* Top products: "Mountain-200 Black- 38" ($2,295), "Touring-1000 Blue- 46" ($2,384).
+
+*Insight:* Premium bikes lead sales; multi-year data needed for full comparison.
