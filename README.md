@@ -26,13 +26,15 @@ Sample data covers March 13–18, 2013, with 498 orders, 469 customers, and 295 
 *Result:* 2013 (up to March 18): $372,318 sales, 469 customers, 498 units.
 *Insight:* Early 2013 shows robust sales; full-year data would reveal trends.
 
-- Monthly Sales
-        <pre> ```SELECT
-            MONTH(order_date) AS order_month,
-            SUM(sales_amount) AS total_sales,
-            COUNT(DISTINCT customer_key) AS total_customers,
-            SUM(quantity) AS total_quantity
-        FROM fact_sales
-        GROUP BY MONTH(order_date)
-        ORDER BY total_sales DESC;``` </pre>
+- Monthly Sales query:
+    <pre> ```SELECT
+        MONTH(order_date) AS order_month,
+        SUM(sales_amount) AS total_sales,
+        COUNT(DISTINCT customer_key) AS total_customers,
+        SUM(quantity) AS total_quantity
+    FROM fact_sales
+    GROUP BY MONTH(order_date)
+    ORDER BY total_sales DESC;``` </pre>
 
+*Result:* March: $372,318 sales, 469 customers, 498 units.
+*Insight:* March is active; broader data could confirm seasonality.
