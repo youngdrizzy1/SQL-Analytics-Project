@@ -233,3 +233,11 @@ Sample data covers March 13–18, 2013, with 498 orders, 469 customers, and 295 
         ELSE total_sales / lifespan
     END AS avg_monthly_spend
     FROM customer_aggregation;``` </prev>
+
+
+    *Sample Result:* Jon Yang (customer_key 1), Age 53, New, 1 order, $32 sales, Recency ~139 months, Avg Order Value $32.
+
+    *Insight:* One-time buyers dominate; broader data would highlight repeat customers.
+
+## Conclusion
+This analysis reveals a bike-centric business with strong early 2013 sales, driven by premium products. Future steps include expanding the dataset for deeper trends and customer loyalty insights.
