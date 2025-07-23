@@ -24,6 +24,7 @@ Sample data covers March 13–18, 2013, with 498 orders, 469 customers, and 295 
     ORDER BY total_sales DESC;``` </pre>
   
 *Result:* 2013 (up to March 18): $372,318 sales, 469 customers, 498 units.
+
 *Insight:* Early 2013 shows robust sales; full-year data would reveal trends.
 
 - Monthly Sales query:
@@ -37,4 +38,5 @@ Sample data covers March 13–18, 2013, with 498 orders, 469 customers, and 295 
     ORDER BY total_sales DESC;``` </pre>
 
 *Result:* March: $372,318 sales, 469 customers, 498 units.
+
 *Insight:* March is active; broader data could confirm seasonality.
