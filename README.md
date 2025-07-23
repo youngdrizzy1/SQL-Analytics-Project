@@ -69,8 +69,8 @@ FROM (
     FROM fact_sales AS f
     LEFT JOIN dim_products AS p ON f.product_key = p.product_key
     GROUP BY order_year, p.product_name
-)
-SELECT
+)``` </pre>
+<pre> ```SELECT
     order_year,
     product_name,
     current_sales,
