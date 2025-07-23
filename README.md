@@ -68,8 +68,7 @@ FROM (
         SUM(f.sales_amount) AS current_sales
     FROM fact_sales AS f
     LEFT JOIN dim_products AS p ON f.product_key = p.product_key
-    GROUP BY order_year, p.product_name
-)``` </pre>
+    GROUP BY order_year, p.product_name)``` </pre>
 <pre> ```SELECT
     order_year,
     product_name,
