@@ -2,6 +2,13 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Post-blue)](https://www.linkedin.com/posts/eromosele-itoya_github-youngdrizzy1sql-analytics-project-activity-7353675549090693120-rg5Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbDOGsBGINDr5uoWo3fkmNHZc_HI1Qst6k)
 
+### Table of Contents
+- [Introduction](#Introduction)
+- [Data Overview](#Data-Overview)
+- [Analysis Tasks](#Analysis-Tasks)
+- [Conclusion](#Conclusion)
+- [Connect with Me](#Connect-with-Me)
+
 ## Introduction
 This project leverages advanced SQL techniques to analyze sales data from three tables: dim_customers, dim_products, and fact_sales. 
 The goal is to answer business questions through trends, performance, and customer insights, using CTEs, window functions, and subqueries.
