@@ -1,5 +1,7 @@
 # Advanced SQL Analytics Project
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Post-blue)](https://www.linkedin.com/posts/eromosele-itoya_github-youngdrizzy1sql-analytics-project-activity-7353675549090693120-rg5Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbDOGsBGINDr5uoWo3fkmNHZc_HI1Qst6k)
+
 ## Introduction
 This project leverages advanced SQL techniques to analyze sales data from three tables: dim_customers, dim_products, and fact_sales. 
 The goal is to answer business questions through trends, performance, and customer insights, using CTEs, window functions, and subqueries.
@@ -241,3 +243,7 @@ Sample data covers March 13–18, 2013, with 498 orders, 469 customers, and 295 
 
 ## Conclusion
 This analysis reveals a bike-centric business with strong early 2013 sales, driven by premium products. Future steps include expanding the dataset for deeper trends and customer loyalty insights.
+
+## Connect with Me
+[LinkedIn](https://www.linkedin.com/in/eromosele-itoya/) | 
+[GitHub](https://github.com/youngdrizzy1)
